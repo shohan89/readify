@@ -1,98 +1,80 @@
 [
-    {
-        "bookId": 1,
-        "bookName": "The Midnight Library",
-        "author": "Matt Haig",
-        "image": "https://example.com/images/midnight-library.jpg",
-        "review": "A moving novel about life choices, regrets, and the infinite possibilities each decision can create.",
-        "totalPages": 304,
-        "rating": 4.3,
-        "category": "Fiction",
-        "tags": [
-            "Philosophical",
-            "Fantasy"
-        ],
-        "publisher": "Canongate Books",
-        "yearOfPublishing": 2020
-    },
-    {
-        "bookId": 2,
-        "bookName": "Atomic Habits",
-        "author": "James Clear",
-        "image": "https://example.com/images/atomic-habits.jpg",
-        "review": "A practical guide to building good habits and breaking bad ones, with proven strategies backed by science.",
-        "totalPages": 320,
-        "rating": 4.8,
-        "category": "Self-help",
-        "tags": [
-            "Productivity",
-            "Psychology"
-        ],
-        "publisher": "Penguin Random House",
-        "yearOfPublishing": 2018
-    },
-    {
-        "bookId": 3,
-        "bookName": "Educated",
-        "author": "Tara Westover",
-        "image": "https://example.com/images/educated.jpg",
-        "review": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world.",
-        "totalPages": 352,
-        "rating": 4.7,
-        "category": "Memoir",
-        "tags": [
-            "Inspiring",
-            "Biography"
-        ],
-        "publisher": "Random House",
-        "yearOfPublishing": 2018
-    },
-    {
-        "bookId": 4,
-        "bookName": "The Silent Patient",
-        "author": "Alex Michaelides",
-        "image": "https://example.com/images/silent-patient.jpg",
-        "review": "A psychological thriller about a woman who stops speaking after being accused of murdering her husband.",
-        "totalPages": 336,
-        "rating": 4.1,
-        "category": "Thriller",
-        "tags": [
-            "Suspense",
-            "Psychological"
-        ],
-        "publisher": "Celadon Books",
-        "yearOfPublishing": 2019
-    },
-    {
-        "bookId": 5,
-        "bookName": "Sapiens: A Brief History of Humankind",
-        "author": "Yuval Noah Harari",
-        "image": "https://example.com/images/sapiens.jpg",
-        "review": "A sweeping narrative of human history, from the Stone Age to the modern day.",
-        "totalPages": 498,
-        "rating": 4.6,
-        "category": "History",
-        "tags": [
-            "Anthropology",
-            "Science"
-        ],
-        "publisher": "Harper",
-        "yearOfPublishing": 2014
-    },
-    {
-        "bookId": 6,
-        "bookName": "The Alchemist",
-        "author": "Paulo Coelho",
-        "image": "https://example.com/images/alchemist.jpg",
-        "review": "An allegorical novel about a shepherd\u2019s journey to discover his personal legend and fulfill his destiny.",
-        "totalPages": 208,
-        "rating": 4.2,
-        "category": "Fiction",
-        "tags": [
-            "Philosophical",
-            "Adventure"
-        ],
-        "publisher": "HarperOne",
-        "yearOfPublishing": 1988
-    }
+  {
+    "bookId": 1,
+    "bookName": "The Midnight Library",
+    "author": "Matt Haig",
+    "image": "https://i.ibb.co.com/rRHpqmVw/The-Midnight-Library-Feature.jpg",
+    "review": "A moving novel about life choices, regrets, and the infinite possibilities each decision can create.",
+    "totalPages": 304,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Philosophical", "Fantasy"],
+    "publisher": "Canongate Books",
+    "yearOfPublishing": 2020
+  },
+  {
+    "bookId": 2,
+    "bookName": "Atomic Habits",
+    "author": "James Clear",
+    "image": "https://i.ibb.co.com/1cnk4cv/61-M6-Kz-Ubf7-L-UF1000-1000-QL80.jpg",
+    "review": "A practical guide to building good habits and breaking bad ones, with proven strategies backed by science.",
+    "totalPages": 320,
+    "rating": 4.8,
+    "category": "Self-help",
+    "tags": ["Productivity", "Psychology"],
+    "publisher": "Penguin Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://i.ibb.co.com/RGJXCk09/1f4a24825dfef1fad86daa0d68c4d136.jpg",
+    "review": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world.",
+    "totalPages": 352,
+    "rating": 4.7,
+    "category": "Memoir",
+    "tags": ["Inspiring", "Biography"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://i.ibb.co.com/KcWmf5P0/816da2e8b6df0a3b076f8c0a0d951376.jpg",
+    "review": "A psychological thriller about a woman who stops speaking after being accused of murdering her husband.",
+    "totalPages": 336,
+    "rating": 4.1,
+    "category": "Thriller",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 5,
+    "bookName": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "image": "https://i.ibb.co.com/fz7YZ54r/0837393-sapiens-a-brief-history-of-humankind-by-yuval-noah-harari.jpg",
+    "review": "A sweeping narrative of human history, from the Stone Age to the modern day.",
+    "totalPages": 498,
+    "rating": 4.6,
+    "category": "History",
+    "tags": ["Anthropology", "Science"],
+    "publisher": "Harper",
+    "yearOfPublishing": 2014
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.ibb.co.com/v2PvGZM/510n-XEpimx-L-UF1000-1000-QL80.jpg",
+    "review": "An allegorical novel about a shepherd\u2019s journey to discover his personal legend and fulfill his destiny.",
+    "totalPages": 208,
+    "rating": 4.2,
+    "category": "Fiction",
+    "tags": ["Philosophical", "Adventure"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 1988
+  }
 ]
