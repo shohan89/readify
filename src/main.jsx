@@ -5,6 +5,7 @@ import './index.css'
 import MainLayout from './layouts/MainLayout.jsx'
 import Home from './pages/Home.jsx'
 import ListedBooks from './pages/ListedBooks.jsx'
+import PagesToRead from './pages/PagesToRead.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/listed-books',
         element: <ListedBooks />
+      },
+      {
+        path: '/pages-to-read',
+        element: <PagesToRead />
       }
     ]
   }

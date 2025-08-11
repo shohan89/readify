@@ -5,7 +5,7 @@ const Nav = () => {
     const links = <>
         <li><Link to='/' className='border-b-2 border-violet-600'>Home</Link></li>
         <li><Link to='/listed-books'>Listed Books</Link></li>
-        <li><Link to=''>Pages to Read</Link></li>
+        <li><Link to='/pages-to-read'>Pages to Read</Link></li>
     </>
     return (
         <div className='max-w-7xl mx-auto bg-base-100 shadow-sm'>
