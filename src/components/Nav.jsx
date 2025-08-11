@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Nav = () => {
     const links = <>
-        <li><a className='border-b-2 border-violet-600'>Home</a></li>
-        <li><a>Listed Books</a></li>
-        <li><a>Pages to Read</a></li>
+        <li><Link to='/' className='border-b-2 border-violet-600'>Home</Link></li>
+        <li><Link to='/listed-books'>Listed Books</Link></li>
+        <li><Link to=''>Pages to Read</Link></li>
     </>
     return (
         <div className='max-w-7xl mx-auto bg-base-100 shadow-sm'>
@@ -28,8 +29,8 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn border-2 border-violet-400 bg-violet-200 text-violet-600 mr-4">Sign In</a>
-                <a className="btn bg-violet-600 text-white">Sign Up</a>
+                <Link className="btn border-2 border-violet-400 bg-violet-200 text-violet-600 mr-4">Sign In</Link>
+                <Link className="btn bg-violet-600 text-white">Sign Up</Link>
             </div>
             </div>
         </div>
