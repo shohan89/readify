@@ -12,7 +12,7 @@ const Books = () => {
         }
     },[])
     return (
-        <div>
+        <div className='max-w-7xl mx-auto bg-amber-200'>
             <h2>This is books component: {books.length}</h2>
         </div>
     );
