@@ -1,4 +1,5 @@
 import React from 'react';
+import Books from '../components/Books';
 import Hero from '../components/Hero';
 import SectionTitle from "../components/SectionTitle";
 
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Hero />
             <SectionTitle title={'Our Books'} />
+            <Books />
         </>
     );
 };
