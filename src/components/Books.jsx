@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Books = () => {
+    const [books, setBooks] = useState([]);
+    useEffect(()=>{
+        try{
+            fetch('books_data.json')
+                .then(res => res.json())
+                .then(data => setBooks(data))
+        } catch (error){
+            console.error(error, 'can not fetching book data');
+        }
+    },[])
     return (
         <div>
-            <h2>This is books component</h2>
+            <h2>This is books component: {books.length}</h2>
         </div>
     );
 };
