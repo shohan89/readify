@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import heroBook from '../assets/hero-book.png';
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
                         <br  className="hidden md:inline lg:hidden" />turpis pulvinar, est scelerisque ligula sem
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-violet-600 text-white">View The List</a>
+                        <Link to='' className="px-8 py-3 text-lg font-semibold rounded bg-violet-600 text-white">View The List</Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
