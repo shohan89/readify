@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Nav = () => {
     const links = <>
-        <li><Link to='/' className='border-b-2 border-violet-600'>Home</Link></li>
-        <li><Link to='/listed-books'>Listed Books</Link></li>
-        <li><Link to='/pages-to-read'>Pages to Read</Link></li>
+        <li><NavLink to='/' className={({isActive})=> isActive ? "border-b-2 border-violet-600" : ""}>Home</NavLink></li>
+        <li><NavLink to='/listed-books' className={({isActive})=> isActive ? "border-b-2 border-violet-600" : ""}>Listed Books</NavLink></li>
+        <li><NavLink to='/pages-to-read' className={({isActive})=> isActive ? "border-b-2 border-violet-600" : ""}>Pages to Read</NavLink></li>
     </>
     return (
         <div className='max-w-7xl mx-auto bg-base-100 shadow-sm'>
