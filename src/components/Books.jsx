@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Book from './Book';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
@@ -13,7 +14,9 @@ const Books = () => {
     },[])
     return (
         <div className='max-w-7xl mx-auto bg-amber-200'>
-            <h2>This is books component: {books.length}</h2>
+            {
+                books.map(book => <Book key={book.id} book={book} />)
+            }
         </div>
     );
 };
