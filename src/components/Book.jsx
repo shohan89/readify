@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaRegStar } from "react-icons/fa6";
 import { Link } from 'react-router';
 
 const Book = ({ book }) => {
@@ -19,7 +20,8 @@ const Book = ({ book }) => {
             <hr className='border border-dashed mt-5 mb-5' />
             <div className='flex justify-between'>
                 <p>{category}</p>
-                <div>
+                <div className='flex items-center gap-2'>
+                    <FaRegStar />
                     <p>{rating}</p>
                 </div>
             </div>
