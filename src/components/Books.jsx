@@ -13,9 +13,9 @@ const Books = () => {
         }
     },[])
     return (
-        <div className='max-w-7xl mx-auto bg-amber-200'>
+        <div className='max-w-7xl mx-auto grid md:grid-cols-3 gap-6'>
             {
-                books.map(book => <Book key={book.id} book={book} />)
+                books.map(book => <Book key={book.bookId} book={book} />)
             }
         </div>
     );
