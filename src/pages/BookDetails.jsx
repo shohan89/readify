@@ -46,6 +46,10 @@ const BookDetails = () => {
                         <p>{rating}</p>
                     </div>
                 </div>
+                <div className='space-x-4 mt-8'>
+                    <Link className='px-7 py-5 border-2 rounded-xl text-[18px] font-semibold'>Read</Link>
+                    <Link className='px-7 py-5 bg-violet-600 text-white text-[18px] font-semibold rounded-xl'>Wishlist</Link>
+                </div>
             </div>
         </div>
     );
