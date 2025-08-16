@@ -9,9 +9,8 @@ const BookDetails = () => {
     const {bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
 
     const handleRead = () =>{
-        // console.log('Added successfully!')
         saveReadBook(idInt);
-        alert('added successfully!')
+        // alert('added successfully!')
     }
     
     return (
