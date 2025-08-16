@@ -1,4 +1,5 @@
 import { Link, useLoaderData, useParams } from 'react-router';
+import { saveReadBook } from '../utils/localStorage';
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -8,7 +9,9 @@ const BookDetails = () => {
     const {bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
 
     const handleRead = () =>{
-        console.log('Added successfully!')
+        // console.log('Added successfully!')
+        saveReadBook(idInt);
+        alert('added successfully!')
     }
     
     return (
