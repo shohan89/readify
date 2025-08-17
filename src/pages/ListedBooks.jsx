@@ -20,7 +20,7 @@ const ListedBooks = () => {
                     <span>Read Books</span>
                 </Link>
                 <Link 
-                to='' 
+                to={'wishlist-book'} 
                 onClick={()=>setTabIndex(1)}
                 className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 1 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400`}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router"
 import ReadBook from "../components/ReadBook.jsx"
+import WishlistBook from "../components/WishlistBook.jsx"
 import MainLayout from "../layouts/MainLayout"
 import BookDetails from "../pages/BookDetails.jsx"
 import Home from '../pages/Home.jsx'
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
               index: true,
               element: <ReadBook />
+            },
+            {
+              path: 'wishlist-book',
+              element: <WishlistBook />
             }
           ]
         },
