@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -30,6 +30,7 @@ const ListedBooks = () => {
                     <span>Wishlist Books</span>
                 </Link>
             </div>
+            <Outlet />
         
         </>
     );

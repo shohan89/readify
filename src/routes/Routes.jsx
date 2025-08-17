@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router"
+import ReadBook from "../components/ReadBook.jsx"
 import MainLayout from "../layouts/MainLayout"
 import BookDetails from "../pages/BookDetails.jsx"
 import Home from '../pages/Home.jsx'
@@ -16,7 +17,13 @@ const router = createBrowserRouter([
         },
         {
           path: '/listed-books',
-          element: <ListedBooks />
+          element: <ListedBooks />,
+          children: [
+            {
+              index: true,
+              element: <ReadBook />
+            }
+          ]
         },
         {
           path: '/pages-to-read',
