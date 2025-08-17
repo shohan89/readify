@@ -26,8 +26,9 @@ const saveWishListBook = bookId => {
     if(wishListBooks.includes(bookId)){
         return toast.error('Already in wishlist')
     }
-    wishListBooks.push(bookId)
-    localStorage.setItem('wishlist-books', JSON.stringify(wishListBooks));
+    // wishListBooks.push(bookId)
+    const newWishListBooks = [...wishListBooks, bookId]
+    localStorage.setItem('wishlist-books', JSON.stringify(newWishListBooks));
     toast.success('Successfully added to wishlist');
 }
 
