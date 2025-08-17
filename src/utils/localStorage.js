@@ -20,7 +20,7 @@ const getWishListBooksFromLs = () => {
 const saveWishListBook = bookId => {
     const readBooks = getStoredBooksFromLs();
     if(readBooks.includes(bookId)){
-        return toast.error('Already added to wishlist!')
+        return toast.error('Already Read!')
     }
     const wishListBooks = getWishListBooksFromLs()
     if(wishListBooks.includes(bookId)){

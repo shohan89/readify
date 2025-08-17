@@ -1,5 +1,5 @@
 import { Link, useLoaderData, useParams } from 'react-router';
-import { saveReadBook } from '../utils/localStorage';
+import { getStoredBooksFromLs, getWishListBooksFromLs, saveReadBook, saveWishListBook } from '../utils/localStorage';
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -8,9 +8,18 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
     const {bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
 
+    const readBooks = getStoredBooksFromLs();
+    const wishlistBooks = getWishListBooksFromLs();
+    const isRead = readBooks.includes(idInt);
+    const isWishlisted = wishlistBooks.includes(idInt);
+
     const handleRead = () =>{
         saveReadBook(idInt);
         // alert('added successfully!')
+    }
+
+    const handleWishList = () =>{
+        saveWishListBook(idInt);
     }
     
     return (
@@ -52,8 +61,14 @@ const BookDetails = () => {
                     </div>
                 </div>
                 <div className='space-x-4 mt-8'>
-                    <button onClick={handleRead} className='px-7 py-5 border-2 rounded-xl text-[18px] font-semibold cursor-pointer'>Read</button>
-                    <button className='px-7 py-5 bg-violet-600 text-white text-[18px] font-semibold rounded-xl cursor-pointer'>Wishlist</button>
+                    <button onClick={handleRead} className='px-7 py-5 border-2 rounded-xl text-[18px] font-semibold cursor-pointer'
+                    disabled={isRead}
+                    >Read</button>
+                    <button 
+                    onClick={handleWishList}
+                    className='px-7 py-5 bg-violet-600 text-white text-[18px] font-semibold rounded-xl cursor-pointer'
+                    disabled={isRead || isWishlisted}
+                    >Wishlist</button>
                 </div>
             </div>
         </div>
