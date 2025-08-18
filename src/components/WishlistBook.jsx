@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getWishListBooksFromLs } from "../utils/localStorage";
+import EmptyList from "./EmptyList";
 import SingleWishListBook from "./SingleWishListBook";
 
 const WishlistBook = () => {
@@ -14,6 +15,11 @@ const WishlistBook = () => {
             setWishlistBooks(bookWishlisted);
         }
     },[books])
+
+    if(wishlistBooks.length < 1){
+        return <EmptyList message={'Nothing to show'} address={'/'} label={'Browse Books'} />
+    }
+
     return (
         <div className="max-w-7xl mx-auto mt-6">
             {
