@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router';
 
 const Nav = () => {
@@ -8,7 +7,7 @@ const Nav = () => {
         <li><NavLink to='/pages-to-read' className={({isActive})=> isActive ? "border-b-2 border-violet-600" : ""}>Pages to Read</NavLink></li>
     </>
     return (
-        <div className='max-w-7xl mx-auto bg-base-100 shadow-sm'>
+        <div className='max-w-7xl mx-auto '>
             <div className="navbar">
             <div className="navbar-start">
                 <div className="dropdown">
