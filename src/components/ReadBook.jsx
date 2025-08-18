@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoredBooksFromLs } from "../utils/localStorage";
+import SingleReadbook from "./SingleReadbook";
 
 const ReadBook = () => {
     const books = useLoaderData();
@@ -16,9 +17,11 @@ const ReadBook = () => {
     
     return (
         <div className="max-w-7xl mx-auto mt-6">
-            <h2 className="text-2xl">Book I read {readBooks.length}</h2>
             {
-                readBooks.map(readBook => <li key={readBook.bookId}>{readBook.bookName}</li>)
+                readBooks.map(readBook => <SingleReadbook 
+                    key={readBook.bookId}
+                    readBook={readBook}
+                     />)
             }
         </div>
     );
