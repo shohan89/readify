@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoredBooksFromLs } from "../utils/localStorage";
+import EmptyList from "./EmptyList";
 import SingleReadbook from "./SingleReadbook";
 
 const ReadBook = () => {
@@ -14,6 +15,9 @@ const ReadBook = () => {
             setReadBooks(bookRead)
         }
     },[books])
+    if(readBooks.length < 1){
+        return <EmptyList message={'Nothing to show'} address={'/'} label={'Browse Books'} />
+    }
     
     return (
         <div className="max-w-7xl mx-auto mt-6">
