@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getWishListBooksFromLs } from "../utils/localStorage";
+import SingleWishListBook from "./SingleWishListBook";
 
 const WishlistBook = () => {
     const books = useLoaderData();
@@ -15,9 +16,11 @@ const WishlistBook = () => {
     },[books])
     return (
         <div className="max-w-7xl mx-auto mt-6">
-            <h2>This is wishlist book: {wishlistBooks.length}</h2>
             {
-                wishlistBooks.map(wishlistBook => <li key={wishlistBook.bookId}>{wishlistBook.bookName}</li>)
+                wishlistBooks.map(wishlistBook => <SingleWishListBook
+                    key={wishlistBook.bookId}
+                    wishListBook={wishlistBook}
+                     />)
             }
         </div>
     );
